@@ -14,6 +14,11 @@ app.post("/user", (req, res) => {
   res.send(body);
 });
 
+app.post("/user", (req, res) => {
+  let body = req.body;
+  res.send(body);
+});
+
 app.listen(port, () => {
   console.log("Server is running on port 3000");
 });
